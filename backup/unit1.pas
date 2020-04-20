@@ -32,8 +32,20 @@ implementation
 { TForm1 }
 
 procedure TForm1.Button1Click(Sender: TObject);
+var
+  namaDepan: String;
+  namaTengah, namaBelakang: String;
+  usia: Integer;
+  targetKuliah: Integer;
+  IPK: Double;
+  nilaiAbjad: Char;
+  tampan: Boolean;
 begin
-  ShowMessage('Hello '+eNama.text);
+     namaDepan:='Mirza';
+     namaTengah:='Yogy';
+     namaBelakang:='Kurniawan';
+
+     MessageDlg('Pesan','Pesan',mtConfirmation,[mbOK,mbCancel],0);
 end;
 
 end.
