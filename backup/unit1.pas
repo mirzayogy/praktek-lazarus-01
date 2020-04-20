@@ -44,8 +44,25 @@ begin
      namaDepan:='Mirza';
      namaTengah:='Yogy';
      namaBelakang:='Kurniawan';
+     usia:=18;
+     IPK:= 3.896572431;
+     nilaiAbjad:='A';
+     tampan:=False;
 
-     MessageDlg('Pesan','Pesan',mtConfirmation,[mbOK,mbCancel],0);
+     //MessageDlg('Judul Pesan',namaDepan + ' ' +
+     //      namaTengah + ' ' + namaBelakang, mtInformation,[mbOK],0);
+     //
+     //MessageDlg('Usia',IntToStr(usia), mtInformation,[mbOK],0);
+
+     //MessageDlg('IPK',FloatToStrF(IPK,ffFixed,3,2), mtInformation,[mbOK],0);
+
+     //MessageDlg('Tampan',BoolToStr(tampan), mtInformation,[mbOK],0);
+
+     MessageDlg('Hari Ini',FormatDateTime('ddd, dd-MMMM-yyyy',now), mtInformation,[mbOK],0);
+
+
+
+
 end;
 
 end.
